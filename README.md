@@ -81,7 +81,7 @@ Operations in SQLAlchemy are done as parts of transactions (i.e., sequences of o
 Database transactions guarantee data validity despite malfunctions and are ACID:
 
 - **atomicity**: update all-or-nothing;
-- **consistency**: \*\*\*\*database always in consistent state, everybody sees the data the same;
+- **consistency**: database always in consistent state, everybody sees the data the same;
 - **isolation:** execution of transactions concurrently will result in a state that is equivalent to a state achieved these were executed serially in some order;
 - **durability:** data never lost, updates and modifications to the database are stored in and written to disk and they persist even if a system failure occurs.
 
