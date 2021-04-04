@@ -189,7 +189,7 @@ def sale(house_id, buyer_id, sale_price, sale_date):
     session.commit()
 
 
-# Insert new data
+# inserting new data
 sold_houses = [
     [5001, 4003, 2800000, datetime.date(2021, 3, 20)],
     [5018, 4005, 150000,  datetime.date(2021, 3, 21)],
