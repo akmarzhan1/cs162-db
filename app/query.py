@@ -41,7 +41,7 @@ for index in range(5):
 print("")
 print("")
 
-print('2. Find the top 5 estate agents who have sold the most in {}.', month_name)
+print('2. Find the top 5 estate agents who have sold the most in {}.'.format(month_name))
 print("")
 
 query = session.query(
