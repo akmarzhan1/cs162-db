@@ -87,6 +87,6 @@ Database transactions guarantee data validity despite malfunctions and are ACID:
 
 ## Indexing
 
-As far as I understand, SQLite has an automatic indexing feature from version 3.7.17, which allows doing lookups on non-indexed columns, assuming that generating a temporary index is cheaper than doing a raw lookup. Thus, all queries are automatically optimized. We can also consider primary keys that we defined as indices since the index is simply an ordered structure used to find an entry in $O(log(n))$ complexity (lookup in a BST). Table scan, on the other hand, has $O(n)$ complexity.
+As far as I understand, SQLite has an automatic indexing feature from version 3.7.17, which allows doing lookups on non-indexed columns, assuming that generating a temporary index is cheaper than doing a raw lookup. Thus, all queries are automatically optimized. We can also consider primary keys that we defined as indices since the index is simply an ordered structure used to find an entry in `O(log(n))` complexity (lookup in a BST). Table scan, on the other hand, has `O(n)` complexity.
 
 The app is very small at this point, which is why additional considerations weren't necessary. However, I acknowledge that if there are many more entries, there would be a need for faster querying as it would take a lot of time to compile reports. If we wanted to manually add indices to some columns to have predefined access to them, we can use the `index_property` from `sqlalchemy.ext.indexable`.
