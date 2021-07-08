@@ -22,7 +22,7 @@ screenshot
 ## Architecture
 
 ```
-path/cs162-db
+path/database-init
 ├── app/
 │   ├── data.py
 │   ├── models.py
